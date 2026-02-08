@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nova Mensagem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <form [formGroup]="formGroup" (ngSubmit)="enviarMensagem()">
+
+    <ion-item>
+      <ion-label position="floating">Destinatário</ion-label>
+      <ion-select formControlName="destinatarioId">
+        <ion-select-option *ngFor="let u of usuarios" [value]="u.id">
+          {{ u.nome }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Mensagem</ion-label>
+      <ion-textarea formControlName="texto" autoGrow="true"></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" class="ion-margin-top" color="primary" [disabled]="!formGroup.valid">Enviar</ion-button>
+
+  </form>
+</ion-content>
+
