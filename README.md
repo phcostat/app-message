@@ -2,6 +2,12 @@
 
 Professional message generator that collects user inputs, validates context, and displays polished feedback for educational demos or lightweight onboarding flows.
 
+## Contact
+
+Github: @phcostat
+Email: peh.costa11@gmail.com
+Instagram: @phcostat @_pedrohct
+
 ## Features
 - **Guided Input Flow** – Captures user name, message, and parameters with validation hints.
 - **Dynamic Rendering** – Builds the final message instantly with responsive formatting.
