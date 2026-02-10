@@ -5,7 +5,9 @@ Professional message generator that collects user inputs, validates context, and
 ## Contact
 
 Github: @phcostat
+
 Email: peh.costa11@gmail.com
+
 Instagram: @phcostat @_pedrohct
 
 ## Features
